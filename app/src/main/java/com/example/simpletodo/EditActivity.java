@@ -25,6 +25,8 @@ public class EditActivity extends AppCompatActivity {
 
         getIntent().getStringExtra(MainActivity.KEY_ITEM_TEXT);
 
+        editText.setText(getIntent().getStringExtra(MainActivity.KEY_ITEM_TEXT));
+
         // Button save method
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
